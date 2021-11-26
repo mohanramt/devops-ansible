@@ -2,8 +2,9 @@ provider "aws" {
 region = "us-east-2"
 }
 resource "aws_instance" "myawsserver" {
-  ami = "ami-077e31c4939f6a2f3"
+  ami = "ami-0d718c3d715cec4a7"
   instance_type = "t2.small"
+  subnet_id = "subnet-0af4ed161792cc2a3"
   key_name = "gds-import"
 
   tags = {
